@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+        <title>
+            Width Tests
+        </title>
+
+        <link rel="stylesheet" type="text/css" href="width.css">
+    </head>
+    <body>
+        <h1>
+            These divs are supposed to fill the width of the browser window
+        </h1>
+
+        <div class="chrome">
+            This div is prefixed with -webkit
+        </div>
+
+        <div class="onehundred">
+            This div is at 100%
+        </div>
+
+        <div class="firefox">
+            This div is prefixed with -moz
+        </div>
+
+        <h2>
+            Divs with images. A pixel based image (first), a percentage based image (second) and an auto based image (third)
+        </h2>
+
+        <div class="images">
+            <img src="http://cloudfront.practiceupdate.net/assets/img/board-member-default-image.png" class="pixelated">
+        </div>
+
+        <div class="images__percentage">
+            <img src="http://cloudfront.practiceupdate.net/assets/img/board-member-default-image.png" class="perc">
+        </div>
+
+        <div class="images">
+            <img src="http://cloudfront.practiceupdate.net/assets/img/board-member-default-image.png" class="auto"><br/>
+        </div>
+
+        <div class="onehundred">
+            <b>NOTE:</b> The first image will break the layout when it goes below 150px wide.<br/><br/>
+
+            <b>NOTE2:</b> Usually, the layout will break when the window width can't fit the biggest word in this page contained inside itself. BUT, with the property <code>overflow-wrap: break word;</code> in our CSS file, words can't break the layout. <br/><br/>
+
+            <b>NOTE:</b> The AUTO definition BREAKS the entire page layout because it takes the original width of the image and keeps it this way, so the minimum width of the page must always be the minimum width of the smallest image in the page.<br/><br/>
+
+            <b>TL;DR:</b> Pixels and auto-sizes can break my layout, but words can never break them.
+        </div>
+
+        <h2>
+            FlexBoxes with % definitions
+        </h2>
+
+        <div class="flexWidth">
+            Flex with % margin and padding
+        </div>
+
+        <div class="flexWidth">
+            Flex with % margin and padding AND a Flex child
+
+            <div class="flexWidth">
+                This is the child, same class as parent. <br/>
+                Firefox SUCKS, so it doesn't read margin/padding in percentages of a Flex child
+            </div>
+        </div>
+    </body>
+</html>

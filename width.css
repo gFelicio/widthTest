@@ -1,0 +1,103 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    line-break: loose;
+    line-height: 150%;
+    overflow-wrap: break-word;
+}
+
+h1,
+h2
+{
+    width: 100%;
+    border: 1px solid red;
+    margin: 5% 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: grey;
+}
+
+.chrome
+{
+    border: 1px solid red;
+    margin: 3% 0;
+    padding: 3% 0;
+    background-color: beige;
+    color: dimgrey;
+    width: -webkit-fill-available;
+}
+
+.onehundred
+{
+    border: 1px solid red;
+    margin: 3% 0;
+    padding: 3% 1.5%;
+    background-color: aliceblue;
+    color: dimgrey;
+    width: 100%;
+}
+
+.firefox
+{
+    border: 1px solid red;
+    margin: 3% 0;
+    padding: 3% 1.5%;
+    background-color: beige;
+    color: dimgrey;
+    width: -moz-available;
+}
+
+.images
+{
+    border: 1px solid red;
+    margin: 3% 0;
+    padding: 3% 1.5%;
+    background-color: aliceblue;
+    color: dimgrey;
+    width: 100%;
+}
+
+.pixelated
+{
+    border: 1px solid green;
+    width: 150px;
+}
+
+.images__percentage
+{
+    border: 1px solid red;
+    margin: 3% 0;
+    padding: 3% 1.5%;
+    background-color: beige;
+    color: dimgrey;
+    width: 100%;
+}
+
+.perc
+{
+    border: 1px solid green;
+    width: 100%;
+}
+
+.auto
+{
+    border: 1px solid green;
+    width: auto;
+}
+
+.flexWidth
+{
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: aliceblue;
+    padding: 3% 1.5%;
+    margin: 3% 0;
+    justify-content: center;
+    color: dimgrey;
+}
+
