@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="width.css">
     </head>
     <body>
-        <h1>
+        <h1 draggable="true">
             These divs are supposed to fill the width of the browser window
         </h1>
 
@@ -32,17 +32,17 @@
             Divs with images. A pixel based image (first), a percentage based image (second) and an auto based image (third)
         </h2>
 
-        <div class="images">
+        <!-- <div class="images">
             <img src="http://cloudfront.practiceupdate.net/assets/img/board-member-default-image.png" class="pixelated">
-        </div>
+        </div> -->
 
         <div class="images__percentage">
             <img src="http://cloudfront.practiceupdate.net/assets/img/board-member-default-image.png" class="perc">
         </div>
 
-        <div class="images">
+        <!-- <div class="images">
             <img src="http://cloudfront.practiceupdate.net/assets/img/board-member-default-image.png" class="auto"><br/>
-        </div>
+        </div> -->
 
         <div class="onehundred">
             <b>NOTE:</b> The first image will break the layout when it goes below 150px wide.<br/><br/>
@@ -67,7 +67,10 @@
 
             <div class="flexWidth">
                 This is the child, same class as parent. <br/>
-                Firefox SUCKS, so it doesn't read margin/padding in percentages of a Flex child
+
+                Firefox SUCKS, so it doesn't read margin/padding in percentages of a Flex child<br/>
+
+                This behavior might end in Firefox 60 (tested in Firefox 58)
             </div>
         </div>
     </body>
